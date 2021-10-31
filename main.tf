@@ -27,8 +27,6 @@ module "s3_bucket" {
   s3_bucket_name = "${var.student_name}-gocloud-s3-bucket"
 }
 
-
-
 resource "aws_ec2_instance" "web_app" {
   ami = "ami-02e136e904f3da870"
   instance_type = "t2.micro"
